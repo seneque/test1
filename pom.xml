@@ -31,6 +31,16 @@
     	<groupId>org.jdom</groupId>
     	<artifactId>jdom</artifactId>
     	<version>1.1.2</version>
+    	<exclusions>
+    		<exclusion>
+    			<artifactId>maven-cobertura-plugin</artifactId>
+    			<groupId>maven-plugins</groupId>
+    		</exclusion>
+    		<exclusion>
+    			<artifactId>maven-findbugs-plugin</artifactId>
+    			<groupId>maven-plugins</groupId>
+    		</exclusion>
+    	</exclusions>
     </dependency>
   </dependencies>
   <dependencyManagement>
